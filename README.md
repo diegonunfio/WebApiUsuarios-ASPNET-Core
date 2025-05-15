@@ -1,7 +1,7 @@
 # WebApiUsuarios-ASPNET-Core
 
-📘 User Web API - [ASP.NET](http://asp.net/) Core
-This is a REST API project developed with [**ASP.NET](http://asp.net/) Core 9** that allows CRUD operations on a `User` entity. It uses Entity Framework Core for SQL Server database integration and includes automatic documentation via Swagger.
+📘 User Web API - ASP.NET Core
+This is a REST API project developed with **ASP.Net Core 9** that allows CRUD operations on a `User` entity. It uses Entity Framework Core for SQL Server database integration and includes automatic documentation via Swagger.
 
 🚀 Features
 
@@ -13,7 +13,7 @@ This is a REST API project developed with [**ASP.NET](http://asp.net/) Core 9** 
 
 🛠️ Technologies Used
 
-- [ASP.NET](http://asp.net/) Core 9
+- ASP.NET Core 9
 - C#
 - Entity Framework Core
 - SQL Server
@@ -22,7 +22,7 @@ This is a REST API project developed with [**ASP.NET](http://asp.net/) Core 9** 
 📬 API Endpoints
 
 - `GET /api/usuario/Get` → Get all users
-- `GET /api/usuario/GetById/{id}` → Get user by ID
-- `POST /api/usuario/PostUser` → Create a new user
-- `PUT /api/usuario/PutUser/{id}` → Update an existing user
-- `DELETE /api/usuario/DeleteUser/{id}` → Delete a user
+- `GET /api/usuario/GetById/` → Get user by ID
+- `POST /api/usuario/Post` → Create a new user
+- `PUT /api/usuario/Put` → Update an existing user
+- `DELETE /api/usuario/Delete` → Delete a user
