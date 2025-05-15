@@ -16,14 +16,14 @@ namespace WebApiUsers.Controllers
             _context = context;
         }
        
-        [HttpGet("Get")]
+        [HttpGet("GetAll")]
         public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
             var users= await _context.Users.ToListAsync();
             return Ok(users);
         }
       
-        [HttpGet("GetById/{id}")]
+        [HttpGet("GetById")]
         public async Task<ActionResult<User>> GetUser(int id)
         {
             var user = await _context.Users.FindAsync(id);
@@ -45,7 +45,7 @@ namespace WebApiUsers.Controllers
             return StatusCode(StatusCodes.Status201Created, user);
         }
 
-        [HttpPut("Put/{id}")]
+        [HttpPut("Put")]
         public async Task<IActionResult> PutUser(int id, User user)
         {
             var userPut = await _context.Users.FindAsync(id);
@@ -63,7 +63,7 @@ namespace WebApiUsers.Controllers
 
             return Ok(userPut);
         }
-        [HttpDelete("Delete/{id}")]
+        [HttpDelete("Delete")]
         public async Task<IActionResult> DeleteUser(int id)
         {
             var user = await _context.Users.FindAsync(id);
